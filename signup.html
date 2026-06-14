@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign_up</title>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+   
+     <section class="bg-gray-50 min-h-screen py-8 px-4">
+
+    <div class="max-w-md mx-auto bg-white shadow-lg rounded-xl p-6 border border-blue-900">
+
+        <h1 class="text-3xl font-bold text-center text-blue-900 mb-6">
+            Sign Up Form
+        </h1>
+
+        <form method="get" action="#" class="space-y-5">
+
+            <!-- Name -->
+            <div>
+                <label for="name" class="block font-medium text-gray-700 mb-1">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Enter your name"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="block font-medium text-gray-700 mb-1">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Date -->
+            <div>
+                <label for="date" class="block font-medium text-gray-700 mb-1">
+                    Date
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <!-- Gender -->
+            <div>
+                <label class="block font-medium text-gray-700 mb-2">
+                    Gender
+                </label>
+
+                <div class="flex gap-6">
+                    <label class="flex items-center gap-2">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <span>Male</span>
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <span>Female</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Course -->
+            <div>
+                <label for="course" class="block font-medium text-gray-700 mb-1">
+                    Course
+                </label>
+
+                <select
+                    id="course"
+                    name="course"
+                    required
+                    class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                    <option value="">Choose Course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+                type="submit"
+                class="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+</body>
+</html>
